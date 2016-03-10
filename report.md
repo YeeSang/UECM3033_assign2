@@ -33,10 +33,11 @@ Put here your lower and better resolution pictures. Explain how you generate
 these pictures from `task2.py`.
 
 Lower resolution picture(30)
-![image_resolution30.jpg](image_resolution30.jpg)
+![image_resolution30.png](image_resolution30.png)
 
 Better resolution picture(200)
-![image_resolution200.jpg](image_resolution200.jpg)
+![image_resolution200.png](image_resolution200.png)
+
 At first, we obtain the value of red, green, blue from the image in three matrices. Then we perform singluar value decomposition with r,g,b matrices by using np.linalg.svd() function which is defined in linalg module of numpy library. To obtain a low resolution image, we create a new matrix which is the same dimensions as $\Sigma$, but keeping the first 30 none zero elements as in $\Sigma$, and set all other none zero elements to zero. To obtain a better resolution image, repeating the same procedure as previously, but this time keep the first 200 none zero elements rather than 30.
 
 What is a sparse matrix?
